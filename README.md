@@ -1,4 +1,6 @@
-# unRAID Docker Templates for Docker images in the "aryankh" repository.
+# unRAID Docker Templates 
+
+These templates are used for the Docker images in the "aryankh" repository.
 
 **Usage**
 
