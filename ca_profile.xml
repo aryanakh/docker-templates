@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://raw.githubusercontent.com/aryanakh/docker-templates/master/aryanakh/images/profile.jpg</Icon>
+  <Profile>
+    Producing Docker Images for Unraid. 
+  </Profile>
+  <DonateLink>https://www.paypal.com/donate?hosted_button_id=2JW2PEKRS7UXW</DonateLink>
+  <DonateText>If you like my work, consider helping me justify the electrcity bill by leaving a tip <3</DonateText>
+</Maintainer>
