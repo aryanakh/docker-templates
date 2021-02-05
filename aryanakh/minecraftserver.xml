@@ -37,7 +37,11 @@
   <Environment>
     <Variable>
       <Name>SERVER_TYPE</Name>
-      <Value>Mojang</Value>
+      <Value>mojang</Value>
+    </Variable>
+    <Variable>
+      <Name>SERVER_JAR</Name>
+      <Value>minecraft_server.jar</Value>
     </Variable>
     <Variable>
       <Name>CREATE_BACKUP_HOURS</Name>
