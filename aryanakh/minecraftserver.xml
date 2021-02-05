@@ -5,17 +5,14 @@
   <Category>GameServers:</Category>
   <Name>aryanakh-minecraftserver</Name>
   <Description>
-    [b][u][span style='color: #E80000;']Description[/span][/u][/b][br]
+    [b][u][span style='color: #E87000;']Description[/span][/u][/b][br]
    This docker allows you to run a minecraft server inside of a docker container. It allows for modded servers with custom server JARs as well as vanilla.[br][br]
-    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b][u][span style='color: #E87000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where Minecraft will store it's configuration file, database and logs.[br][br]
-    [b][u][span style='color: #E80000;']Documentation[/span][/u][/b][br]
-    https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>
    This docker allows you to run a minecraft server inside of a docker container. It is a fork of Binhex's Minecraft Basic Server to allow for modded servers with custom server JARs.
   </Overview>
-  <Support>https://forums.unraid.net/topic/84880-support-binhex-minecraftserver/</Support>
   <Registry>https://registry.hub.docker.com/r/aryanakh/arch-minecraftserver/</Registry>
   <GitHub>https://github.com/aryankh/arch-minecraftserver</GitHub>
   <Repository>aryanakh/arch-minecraftserver</Repository>
@@ -38,6 +35,10 @@
     </Publish>
   </Networking>
   <Environment>
+    <Variable>
+      <Name>SERVER_TYPE</Name>
+      <Value>Mojang</Value>
+    </Variable>
     <Variable>
       <Name>CREATE_BACKUP_HOURS</Name>
       <Value>12</Value>
@@ -101,8 +102,8 @@
   <Banner></Banner>
   <WebUI>http://[IP]:[PORT:8222]/</WebUI>
   <Icon>https://raw.githubusercontent.com/aryanakh/docker-templates/master/aryanakh/images/minecraftserver-icon.png</Icon>
-  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
-  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+  <DonateText>If you like my work, consider helping me justify the electrcity bill by leaving a tip <3</DonateText>
+  <DonateLink>https://www.paypal.com/donate?hosted_button_id=2JW2PEKRS7UXW</DonateLink>
   <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
   <ExtraParams></ExtraParams>
 </Containers>
