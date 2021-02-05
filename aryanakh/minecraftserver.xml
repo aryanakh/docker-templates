@@ -73,7 +73,7 @@
     </Variable>
     <Variable>
       <Name>JAVA_INITIAL_HEAP_SIZE</Name>
-      <Value>512M</Value>
+      <Value>1024M</Value>
     </Variable>
     <Variable>
       <Name>JAVA_MAX_HEAP_SIZE</Name>
