@@ -3,7 +3,7 @@
   <TemplateURL>https://raw.githubusercontent.com/aryanakh/docker-templates/master/aryanakh/minecraftserver.xml</TemplateURL>
   <Beta>False</Beta>
   <Category>GameServers:</Category>
-  <Name>aryanakh-minecraftserver</Name>
+  <Name>minecraftserver</Name>
   <Description>
     [b][u][span style='color: #E87000;']Description[/span][/u][/b][br]
    This docker allows you to run a minecraft server inside of a docker container. It allows for modded servers with custom server JARs as well as vanilla.[br][br]
