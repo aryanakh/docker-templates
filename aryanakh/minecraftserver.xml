@@ -72,7 +72,7 @@
       <Value>Minecraft Java</Value>
     </Variable>
     <Variable>
-      <Name>JAVA_INITIAL_HEAP_SIZE</Name>
+      <Name>JAVA_MIN_HEAP_SIZE</Name>
       <Value>1024M</Value>
     </Variable>
     <Variable>
