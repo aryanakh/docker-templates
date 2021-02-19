@@ -13,9 +13,9 @@
   <Overview>
    This docker allows you to run a minecraft server inside of a docker container. It is a fork of Binhex's Minecraft Basic Server to allow for modded servers with custom server JARs.
   </Overview>
-  <Registry>https://registry.hub.docker.com/r/aryanakh/arch-minecraftserver/</Registry>
-  <GitHub>https://github.com/aryankh/arch-minecraftserver</GitHub>
-  <Repository>aryanakh/arch-minecraftserver</Repository>
+  <Registry>https://registry.hub.docker.com/r/aryanakh/minecraftserver/</Registry>
+  <GitHub>https://github.com/aryankh/minecraftserver</GitHub>
+  <Repository>aryanakh/minecraftserver</Repository>
   <Project>https://www.minecraft.net/en-us/download/server/</Project>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
