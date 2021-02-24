@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/aryanakh/docker-templates/master/aryanakh/odoo.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>Productivity:</Category>
+  <Name>odoo</Name>
+  <Description>
+    [b][u][span style='color: #E87000;']Description[/span][/u][/b][br]
+   Odoo (formerly known as OpenERP) is a suite of open-source business apps including CRM, ERP, e-commerce, billing, accounting, manufacturing, warehose, project management, and inventory management.[br][br]
+  </Description>
+  <Overview>
+   Odoo is an open source ERP and CRM platform and offers a suite of business apps.
+  </Overview>
+  <Registry>https://registry.hub.docker.com/r/aryanakh/odoo/</Registry>
+  <GitHub>https://github.com/aryankh/odoo</GitHub>
+  <Repository>aryanakh/odoo</Repository>
+  <Project>https://www.odoo.com/</Project>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8069</HostPort>
+        <ContainerPort>8069</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8071</HostPort>
+        <ContainerPort>8071</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8072</HostPort>
+        <ContainerPort>8072</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>ODOO_VERSION</Name>
+      <Value>14.0</Value>
+    </Variable>
+    <Variable>
+      <Name>ODOO_RC</Name>
+      <Value>minecraft_server.jar</Value>
+    </Variable>
+
+    <Variable>
+      <Name>UMASK</Name>
+      <Value>000</Value>
+    </Variable>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Banner></Banner>
+  <WebUI>http://[IP]:[PORT:8222]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/aryanakh/docker-templates/master/aryanakh/images/odoo.png</Icon>
+  <DonateText>If you like my work, consider helping me justify the electrcity bill by leaving a tip <3</DonateText>
+  <DonateLink>https://www.paypal.com/donate?hosted_button_id=2JW2PEKRS7UXW</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+  <ExtraParams></ExtraParams>
+</Containers>
