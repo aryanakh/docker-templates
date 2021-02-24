@@ -25,16 +25,6 @@
         <ContainerPort>8069</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
-      <Port>
-        <HostPort>8071</HostPort>
-        <ContainerPort>8071</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>8072</HostPort>
-        <ContainerPort>8072</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
     </Publish>
   </Networking>
   <Environment>
@@ -43,10 +33,17 @@
       <Value>14.0</Value>
     </Variable>
     <Variable>
-      <Name>ODOO_RC</Name>
-      <Value>minecraft_server.jar</Value>
+      <Name>POSTGRES_DB</Name>
+      <Value>postgres</Value>
     </Variable>
-
+    <Variable>
+      <Name>POSTGRES_USER</Name>
+      <Value>odoo</Value>
+    </Variable>
+    <Variable>
+      <Name>POSTGRES_PASSWORD</Name>
+      <Value>odoo</Value>
+    </Variable>
     <Variable>
       <Name>UMASK</Name>
       <Value>000</Value>
@@ -62,8 +59,8 @@
   </Environment>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/config</HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <HostDir>/mnt/user/appdata/odoo</HostDir>
+      <ContainerDir>/etc/odoo</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
