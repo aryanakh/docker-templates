@@ -29,10 +29,6 @@
   </Networking>
   <Environment>
     <Variable>
-      <Name>ODOO_VERSION</Name>
-      <Value>14.0</Value>
-    </Variable>
-    <Variable>
       <Name>POSTGRES_DB</Name>
       <Value>postgres</Value>
     </Variable>
